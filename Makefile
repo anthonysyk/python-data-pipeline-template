@@ -15,9 +15,9 @@ clean-deps:
 	rm requirements.txt.backup
 
 compose-up:
-	docker-compose up --build -d mongo mongo-express && docker-compose logs -f
+	docker-compose --file airflow/docker-compose.yaml up -d --build
 
 compose-down:
-	docker-compose down --remove-orphans
+	docker-compose --file airflow/docker-compose.yaml down --remove-orphans
 
 .PHONY: venv deps save-deps clean-deps compose-up compose-down

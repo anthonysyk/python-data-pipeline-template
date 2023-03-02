@@ -75,4 +75,3 @@ Virtual Environment: https://medium.com/@jtpaasch/the-right-way-to-use-virtual-e
 ## Possible improvements:
 
 - Use poetry
-- 
